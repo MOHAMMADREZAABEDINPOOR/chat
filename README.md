@@ -1,27 +1,41 @@
 <div align="center">
 
-<img src="assets/readme/hero.gif" width="1200" alt="PIMX CHAT · DJANGO — rotating 3D geometry" />
+<img src="assets/readme/hero.gif" width="1200" alt="PIMX CHAT · DJANGO: a desktop conversation with account and message cards" />
 
 **[English](README.md) · [فارسی](README.fa.md)**
 
-<img src="assets/readme/identity.svg" width="1200" alt="ai / English and Persian documentation" />
-
 </div>
 
-# PIMX CHAT · DJANGO
+# 💬 PIMX CHAT · DJANGO
 
 A Django chat application with account management, persisted conversations, static assets and an AI response integration.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/chat) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
 
-## Features
+| At a glance | Details |
+|:---|:---|
+| 💬 Experience | Web application / browser experience |
+| 🧰 Built with | `Django==4.2.7` · `djangorestframework==3.14.0` · `django-cors-headers==4.3.1` · `django-allauth==0.57.0` |
+| 🌐 Documentation | [English](README.md) · [فارسی](README.fa.md) |
 
-- Account and chat Django applications
-- Conversation models and template-based interface
-- Static assets and deployment-oriented dependencies
-- Google AI package in the dependency manifest
+[✨ Features](#features) · [🚀 Getting started](#getting-started) · [⚙️ Configuration](#configuration) · [🌍 Deployment](#deployment)
 
-## Stack
+---
+
+<a id="features"></a>
+
+## ✨ Features
+
+| Area | Included capability |
+|:---|:---|
+| 👤 Accounts | Account and chat Django applications |
+| 🧠 Intelligence | Conversation models and template-based interface |
+| ⚡ Workflow | Static assets and deployment-oriented dependencies |
+| 🧠 Intelligence | Google AI package in the dependency manifest |
+
+<a id="stack"></a>
+
+## 🧰 Stack
 
 | Tool | Version / source |
 |---|---|
@@ -38,7 +52,9 @@ A Django chat application with account management, persisted conversations, stat
 | django-redis==5.4.0 | `requirements.txt` |
 | django-user-agents==0.4.0 | `requirements.txt` |
 
-## Getting started
+<a id="getting-started"></a>
+
+## 🚀 Getting started
 
 Python 3; a desktop/Tk installation for Tkinter or turtle examples. Tkinter is provided by the Python installation, not pip. Legacy dependencies may need a compatible Python version.
 
@@ -53,7 +69,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
 
@@ -61,11 +79,15 @@ These names are found in the example configuration or source; not all are requir
 |---|---|
 | `DJANGO_ALLOW_MEDIA` | Application setting; inspect its definition |
 
-## Usage
+<a id="usage"></a>
+
+## 🎯 Usage
 
 Install requirements in a Python virtual environment, inspect config/settings.py and the AI settings, run migrations and start the local server.
 
-## Project structure
+<a id="project-structure"></a>
+
+## 🗂️ Project structure
 
 | Path | Role |
 |---|---|
@@ -76,35 +98,55 @@ Install requirements in a Python virtual environment, inspect config/settings.py
 | [`templates/`](templates/) | Server-rendered templates |
 | [`manage.py`](manage.py) | Project entry/configuration file |
 
-## Commands and checks
+<a id="commands-and-checks"></a>
+
+## 🧪 Commands and checks
 
 ```bash
 python manage.py check
 python manage.py test
 ```
 
-## Deployment
+<a id="deployment"></a>
+
+## 🌍 Deployment
 
 Configure production secrets, HTTPS, an independent database and allowed hosts. PHP hosting must use public/ as document root; Django needs static-file and WSGI/ASGI configuration. Development servers are for local use.
 
-## Limitations
+<a id="limitations"></a>
+
+## 📌 Limitations
 
 The tracked snapshot includes development data/configuration and mismatched historical version comments. Use a clean local database and review secrets, allowed hosts and static-file handling before hosting.
 
-## Troubleshooting
+<a id="troubleshooting"></a>
+
+## 🛠️ Troubleshooting
 
 - Missing packages: install dependencies using the project’s package manager.
 - API/network failure: check the configured origin, provider and hosting bindings.
 - Old assets: rebuild when a build script exists, then clear the browser cache.
 
-## Contributing
+<a id="contributing"></a>
+
+## 🤝 Contributing
 
 Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
 
-## License
+<a id="license"></a>
+
+## 📄 License
 
 No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
 
 ---
 
 Part of **PIMX** · Documentation in English and Persian.
+
+---
+
+<div align="center">
+
+💬 **PIMX CHAT · DJANGO** · [English](README.md) · [فارسی](README.fa.md)
+
+</div>
