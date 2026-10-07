@@ -1,91 +1,110 @@
-<<<<<<< HEAD
-# chat
-=======
-# PIMXCHAT - Futuristic Chat Interface
+<div align="center">
 
-A modern, Grok-inspired chat interface built with Django and JavaScript, featuring AI-powered conversations with a sleek, futuristic design.
+<img src="assets/readme/hero.gif" width="1200" alt="PIMX CHAT · DJANGO — rotating 3D geometry" />
+
+**[English](README.md) · [فارسی](README.fa.md)**
+
+<img src="assets/readme/identity.svg" width="1200" alt="ai / English and Persian documentation" />
+
+</div>
+
+# PIMX CHAT · DJANGO
+
+A Django chat application with account management, persisted conversations, static assets and an AI response integration.
+
+[GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/chat) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
 
 ## Features
 
-### 🎨 Grok-Style Design
-- **Clean, minimalist interface** inspired by Grok's design philosophy
-- **Proper send button placement** - positioned on the right side of the input area
-- **Copy functionality** - click the copy button on any message to copy the full text
-- **No separate fields** - AI responses are presented as unified text blocks
-- **Responsive design** - works seamlessly on desktop and mobile devices
+- Account and chat Django applications
+- Conversation models and template-based interface
+- Static assets and deployment-oriented dependencies
+- Google AI package in the dependency manifest
 
-### 💬 Chat Features
-- **Real-time messaging** with AI responses
-- **Chat history** with session management
-- **Message copying** - copy any user or AI message with one click
-- **Typing indicators** - visual feedback when AI is responding
-- **Auto-scroll** - automatically scrolls to new messages
-- **Session management** - create, rename, and delete chat sessions
+## Stack
 
-### 🎯 User Experience
-- **Grok-style input area** with integrated send button and action buttons
-- **Hover effects** - copy buttons appear on message hover
-- **Visual feedback** - animations and transitions throughout
-- **Accessibility** - keyboard navigation and screen reader support
-- **Persian language support** - RTL layout and Persian text
+| Tool | Version / source |
+|---|---|
+| Django==4.2.7 | `requirements.txt` |
+| djangorestframework==3.14.0 | `requirements.txt` |
+| django-cors-headers==4.3.1 | `requirements.txt` |
+| django-allauth==0.57.0 | `requirements.txt` |
+| Pillow==10.1.0 | `requirements.txt` |
+| django-celery-beat==2.5.0 | `requirements.txt` |
+| django-celery-results==2.5.1 | `requirements.txt` |
+| django-extensions==3.2.3 | `requirements.txt` |
+| django-debug-toolbar==4.2.0 | `requirements.txt` |
+| django-storages==1.14.2 | `requirements.txt` |
+| django-redis==5.4.0 | `requirements.txt` |
+| django-user-agents==0.4.0 | `requirements.txt` |
 
-### 🎨 Visual Design
-- **Dark theme** with neon accents
-- **Particle effects** - animated background particles
-- **Gradient buttons** - modern gradient styling
-- **Smooth animations** - CSS transitions and keyframe animations
-- **Custom scrollbars** - styled scrollbars for better UX
+## Getting started
 
-## Technical Stack
+Python 3; a desktop/Tk installation for Tkinter or turtle examples. Tkinter is provided by the Python installation, not pip. Legacy dependencies may need a compatible Python version.
 
-- **Backend**: Django 4.x
-- **Frontend**: Vanilla JavaScript, CSS3, HTML5
-- **AI Integration**: Google Gemini API
-- **Styling**: Custom CSS with CSS Variables
-- **Animations**: CSS Keyframes and Transitions
+```bash
+git clone https://github.com/MOHAMMADREZAABEDINPOOR/chat.git
+cd chat
 
-## Installation
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1; macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
 
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run migrations: `python manage.py migrate`
-4. Start the server: `python manage.py runserver`
+## Configuration
+
+These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
+
+| Name | Role |
+|---|---|
+| `DJANGO_ALLOW_MEDIA` | Application setting; inspect its definition |
 
 ## Usage
 
-1. Navigate to the chat interface
-2. Type your message in the input area
-3. Click the send button or press Enter to send
-4. Hover over any message to see the copy button
-5. Click the copy button to copy the message text
-6. Use the sidebar to manage chat sessions
+Install requirements in a Python virtual environment, inspect config/settings.py and the AI settings, run migrations and start the local server.
 
-## Key Features
+## Project structure
 
-### Copy Functionality
-- Every message (both user and AI) has a copy button
-- Copy buttons appear on hover
-- Visual feedback when copying (checkmark icon)
-- Copies the full message text to clipboard
+| Path | Role |
+|---|---|
+| [`accounts/`](accounts/) | Account application |
+| [`assets/`](assets/) | Brand/media/README assets |
+| [`pimxchat/`](pimxchat/) | Chat/web modules |
+| [`static/`](static/) | Static web assets |
+| [`templates/`](templates/) | Server-rendered templates |
+| [`manage.py`](manage.py) | Project entry/configuration file |
 
-### Send Button Design
-- Positioned on the right side of the input area
-- Integrated with action buttons (emoji, mic, attach)
-- Disabled when input is empty
-- Smooth hover animations
+## Commands and checks
 
-### Grok-Style Layout
-- Clean, unified message bubbles
-- No separate fields in AI responses
-- Minimalist design with focus on content
-- Proper spacing and typography
+```bash
+python manage.py check
+python manage.py test
+```
+
+## Deployment
+
+Configure production secrets, HTTPS, an independent database and allowed hosts. PHP hosting must use public/ as document root; Django needs static-file and WSGI/ASGI configuration. Development servers are for local use.
+
+## Limitations
+
+The tracked snapshot includes development data/configuration and mismatched historical version comments. Use a clean local database and review secrets, allowed hosts and static-file handling before hosting.
+
+## Troubleshooting
+
+- Missing packages: install dependencies using the project’s package manager.
+- API/network failure: check the configured origin, provider and hosting bindings.
+- Old assets: rebuild when a build script exists, then clear the browser cache.
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests!
+Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
 
 ## License
 
-This project is licensed under the MIT License. 
- 
->>>>>>> a518d13 (Initial commit)
+No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
+
+---
+
+Part of **PIMX** · Documentation in English and Persian.
